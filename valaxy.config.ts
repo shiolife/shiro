@@ -34,6 +34,14 @@ export default defineValaxyConfig<ThemeUserConfig>({
       '',
     ],
 
+    navbar: [
+      {
+        text: '🐖原梦之星',
+        link: 'https://ym.shiroka.top/',
+      },
+      
+    ],
+
 
     footer: {
       since: 2024,
