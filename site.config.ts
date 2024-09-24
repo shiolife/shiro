@@ -2,82 +2,40 @@ import { defineSiteConfig } from 'valaxy'
 
 export default defineSiteConfig({
   url: 'https://shiroka.top/',
+  favicon:"https://s1.imagehub.cc/images/2024/03/07/261b5a5cdd2de46a25602ad58cb10b4c.jpeg",
   lang: 'zh-CN',
-  title: 'Valaxy Theme Yun',
+  title: '白花的猫不会飞',
   author: {
-    name: 'shiroka',
+    name: '王梦歌',
+    avatar: 'https://s1.imagehub.cc/images/2024/05/02/9e1d211d3e2cf2f70bf946eff40e03c9.jpeg',
   },
-  description: 'Valaxy Theme Yun Preview.',
+  description: '愿能再度相逢梦中',
+  subtitle: 'All at sky.',
   social: [
+    
     {
-      name: 'RSS',
-      link: '/atom.xml',
-      icon: 'i-ri-rss-line',
-      color: 'orange',
-    },
-    {
-      name: 'QQ 群 1050458482',
-      link: 'https://qm.qq.com/cgi-bin/qm/qr?k=kZJzggTTCf4SpvEQ8lXWoi5ZjhAx0ILZ&jump_from=webapi',
+      name: 'QQ 群 864540602',
+      link: 'https://qm.qq.com/q/s8je2hdowU',
       icon: 'i-ri-qq-line',
       color: '#12B7F5',
     },
     {
       name: 'GitHub',
-      link: 'https://github.com/YunYouJun',
+      link: 'https://github.com/shiolife',
       icon: 'i-ri-github-line',
       color: '#6e5494',
     },
-    {
-      name: '微博',
-      link: 'https://weibo.com/jizhideyunyoujun',
-      icon: 'i-ri-weibo-line',
-      color: '#E6162D',
-    },
-    {
-      name: '豆瓣',
-      link: 'https://www.douban.com/people/yunyoujun/',
-      icon: 'i-ri-douban-line',
-      color: '#007722',
-    },
-    {
-      name: '网易云音乐',
-      link: 'https://music.163.com/#/user/home?id=247102977',
-      icon: 'i-ri-netease-cloud-music-line',
-      color: '#C20C0C',
-    },
-    {
-      name: '知乎',
-      link: 'https://www.zhihu.com/people/yunyoujun/',
-      icon: 'i-ri-zhihu-line',
-      color: '#0084FF',
-    },
+
     {
       name: '哔哩哔哩',
       link: 'https://space.bilibili.com/1579790',
       icon: 'i-ri-bilibili-line',
       color: '#FF8EB3',
     },
-    {
-      name: '微信公众号',
-      link: 'https://cdn.yunyoujun.cn/img/about/white-qrcode-and-search.jpg',
-      icon: 'i-ri-wechat-2-line',
-      color: '#1AAD19',
-    },
-    {
-      name: 'Twitter',
-      link: 'https://twitter.com/YunYouJun',
-      icon: 'i-ri-twitter-line',
-      color: '#1da1f2',
-    },
-    {
-      name: 'Telegram Channel',
-      link: 'https://t.me/elpsycn',
-      icon: 'i-ri-telegram-line',
-      color: '#0088CC',
-    },
+
     {
       name: 'E-Mail',
-      link: 'mailto:me@yunyoujun.cn',
+      link: 'mailto:198963653@qq.com',
       icon: 'i-ri-mail-line',
       color: '#8E71C1',
     },
@@ -97,21 +55,21 @@ export default defineSiteConfig({
     enable: true,
     title: '我很可爱，请给我钱！',
     methods: [
-      {
-        name: '支付宝',
-        url: 'https://cdn.yunyoujun.cn/img/donate/alipay-qrcode.jpg',
-        color: '#00A3EE',
-        icon: 'i-ri-alipay-line',
-      },
-      {
-        name: 'QQ 支付',
-        url: 'https://cdn.yunyoujun.cn/img/donate/qqpay-qrcode.png',
-        color: '#12B7F5',
-        icon: 'i-ri-qq-line',
-      },
+      // {
+      //   name: '支付宝',
+      //   url: 'https://cdn.yunyoujun.cn/img/donate/alipay-qrcode.jpg',
+      //   color: '#00A3EE',
+      //   icon: 'i-ri-alipay-line',
+      // },
+      // {
+      //   name: 'QQ 支付',
+      //   url: 'https://cdn.yunyoujun.cn/img/donate/qqpay-qrcode.png',
+      //   color: '#12B7F5',
+      //   icon: 'i-ri-qq-line',
+      // },
       {
         name: '微信支付',
-        url: 'https://cdn.yunyoujun.cn/img/donate/wechatpay-qrcode.jpg',
+        url: 'https://s1.imagehub.cc/images/2024/02/14/fd0f5df21faac5b72ce1b147319f418c.png',
         color: '#2DC100',
         icon: 'i-ri-wechat-pay-line',
       },
