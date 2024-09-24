@@ -27,7 +27,7 @@ export default defineValaxyConfig<ThemeUserConfig>({
       style: '',
     },
 
-    
+
     navbarTitle: [
       'Shiroka',
       '💮',
@@ -37,6 +37,7 @@ export default defineValaxyConfig<ThemeUserConfig>({
 
     footer: {
       since: 2024,
+      powered: false,
 
     },
   },
