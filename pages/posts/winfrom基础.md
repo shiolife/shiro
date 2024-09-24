@@ -2,7 +2,7 @@
 layout: post
 title: winfrom基础
 date: 2024-09-24 19:33:12
-cover:https://images.unsplash.com/photo-1726767305248-e3cfaf9c98b7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+
 ---
 
 ## 窗体
@@ -29,38 +29,42 @@ cover:https://images.unsplash.com/photo-1726767305248-e3cfaf9c98b7?q=80&w=1964&a
 
 ## 控件
 
-##### label控件
+##### label控件(标签)
 
 Label 控件用于显示不能编辑的文本或图像
 
-| 属性  | 说明             |
-| ----- | ---------------- |
-| Name  | 标签的名称       |
-| Text  | 标签上显示的文本 |
-| Image | 标签上显示的图像 |
+| 属性      | 说明             |
+| --------- | ---------------- |
+| Name      | 标签的名称       |
+| Text      | 标签上显示的文本 |
+| Image     | 标签上显示的图像 |
+| BackColor | 设置标签的背景色 |
 
-##### Button控件
+##### Button控件(按钮)
 
 提供了引用程序交互的方法，可以通过按钮执行所有的操作
 
-| 分类 | 名称      | 说明                 |
-| ---- | --------- | -------------------- |
-| 属性 | Name      | 按钮的名称           |
-| 属性 | Text      | 按钮上的文本         |
-| 属性 | TextAlign | 按钮文本对齐方式     |
-| 事件 | Cliek     | 单击按钮时触发的事件 |
+| 分类 | 名称      | 说明                                       |
+| ---- | --------- | ------------------------------------------ |
+| 属性 | Name      | 按钮的名称                                 |
+| 属性 | Text      | 按钮上的文本                               |
+| 属性 | TextAlign | 按钮文本对齐方式                           |
+| 属性 | Enable    | 布尔值，表示控件是否可用，不可用显示为灰色 |
+| 事件 | Cliek     | 单击按钮时触发的事件                       |
 
-##### TextBox控件
+##### TextBox控件(文本框)
 
 用于接收用户输入的信息或向用户展示信息
 
-| 属性         | 说明                                   |
-| ------------ | -------------------------------------- |
-| Name         | 文本框名称                             |
-| Text         | 文本框中的文本内容                     |
-| ReadOnly     | 是否只读                               |
-| PasswordChar | 密码符号，使用此符号显示用户输入的文本 |
-| Multiline    | 是否是多行                             |
+| 属性           | 说明                                   |
+| -------------- | -------------------------------------- |
+| Name           | 文本框名称                             |
+| Text           | 文本框中的文本内容                     |
+| ReadOnly       | 是否只读                               |
+| PasswordChar   | 密码符号，使用此符号显示用户输入的文本 |
+| Multiline      | 是否是多行                             |
+| MaxLength      | 指定可以在文本框输入的最大字符数       |
+| 方法：Focus(); | 将光标定位到当前文本框中               |
 
 ##### RadioButton控件
 
@@ -71,3 +75,42 @@ Label 控件用于显示不能编辑的文本或图像
 | Text    | 单选按钮显示的文本                         |
 | Cheeked | 设置单选按钮是否已被选中，用于设置默认选项 |
 
+#### 常见窗体/控件事件
+
+| 事件        | 说明               |
+| ----------- | ------------------ |
+| Click       | 单击控件时发生     |
+| DoubleClick | 双击时触发         |
+| Enter       | 控件获取焦点时触发 |
+| MouseUp     | 松开鼠标时触发     |
+| TextChanged | 文本发生变化时触发 |
+
+## 方法
+
+#### 消息框对象
+
+语法：
+
+```
+MessageBox.Show(String text, String title,MessageBoxButtons.buttons,MessageBoxIcon.icon);
+```
+
+示例：
+
+```
+MessageBox.Show("确定退出吗", "提示",MessageBoxButtons.YesNo,MessageBoxIcon.Error);
+```
+
+第一个参数表示消息框中的内容；第二个参数表示消息框的标题，第三个参数表示消息框的按钮类型，第四个参数表示消息框的图标。可以填1~4个参数。
+
+通过DialogResult对象可以获取用户单击的按钮，决定是否执行关闭窗体的操作
+
+示例：
+
+```
+
+```
+
+#### 实现窗体跳转和值传递
+
+新建程序窗体
