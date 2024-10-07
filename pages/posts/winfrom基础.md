@@ -103,6 +103,31 @@ Label 控件用于显示不能编辑的文本或图像
 
 #### MunuStrip控件
 
+| 属性  |                      |
+| ----- | -------------------- |
+| Name  | 代码中菜单对象的名称 |
+| Items | 在菜单中显示的集合   |
+| Text  | 与菜单相关的文本     |
+
+
+
+#### ListView控件
+
+| 分类 | 名称                | 说明                                                      |
+| ---- | ------------------- | --------------------------------------------------------- |
+| 属性 | Columns             | 详细信息识图中显示的列                                    |
+|      | DullRowSelect       | 当选中一项时，每项都有一个SubItems子项合集属性            |
+|      | Items               | ListView中所有项的集合，每项抖音一个SubItems子项集合属性  |
+|      | MultiSelect         | 是否允许选择多项                                          |
+|      | SelectedItems       | 被选中的集合                                              |
+|      | View                | 指定ListView的识图模式                                    |
+|      | LargeImageList      | 获取或设置当前项以大图标在控件中显示时使用的LmageList控件 |
+|      | SmallImageList      | 获取或设置当前项以小图标在控件中显示时使用的LmageList控件 |
+|      | ContextMenuStrip    | 关联用户右击该控件时显示的ContextMenuStrip控件            |
+| 事件 | MouseDoubleClick    | 双击事件                                                  |
+| 事件 | SlectedIndexChanged | 每当此列表的SelectedIndex属性修改时触发                   |
+| 方法 | Clear();            | 移除ListView中的所有选项                                  |
+
 
 
 #### 常见窗体/控件事件
@@ -153,3 +178,22 @@ DialogResult result = MessageBox.Show("确定退出吗", "提示", MessageBoxBut
 
 ```
 
+#### MDI应用程序
+
+将该窗体的 `IsMdiContainer` 属性设置为 `true`。这意味着该窗体将成为 MDI 父窗体。
+
+```
+private void ShowChildForm()
+{
+    // 创建子窗体实例
+    ChildForm child = new ChildForm();
+    // 设置子窗体的 MdiParent 为当前的 MDI 父窗体
+    child.MdiParent = this;
+    // 显示子窗体
+    child.Show();
+}
+```
+
+dgvData.AutoGenerateCloumns = false;
+
+//不自动生成列

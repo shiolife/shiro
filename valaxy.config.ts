@@ -27,6 +27,30 @@ export default defineValaxyConfig<ThemeUserConfig>({
       style: '',
     },
 
+        // 置顶文章
+        articlePinned: [ {
+          title: 'shiroka',
+          desc: 'shiroka',
+          img: 'https://cdn.jsdelivr.net/gh/Hazuki-295/Hazuki-295.github.io@latest/assets/image/20220104003437.jpg',
+          link: 'https://shiroka.top/',
+        },
+    
+        {
+          title: '#',
+          desc: '#',
+          img: 'https://s1.imagehub.cc/images/2024/04/05/64beef5734227c769fe8a525d866b91c.jpeg',
+          link: '#',
+        },
+        {
+          title: '刮刮乐',
+          desc: '很有意思，图片募集',
+          img: "https://s1.imagehub.cc/images/2024/04/03/661a5478695ecda0f04b67a395ae536a.jpeg",
+          link: 'https://scratchcard.pages.dev/',
+        }
+      ],
+
+
+
 
     navbarTitle: [
       'Shiroka',
